@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formtest</title>
+{% include 'bootLink.html' %}
+
+</head>
+<body>
+    <form method="post" action="/comment/saveData/">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Register</button>
+        <a href="/comment/datatable">دیتا های جدول</a>
+    </form>
+
+</body>
+</html>
